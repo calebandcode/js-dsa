@@ -5,4 +5,5 @@ const isPalindrome = (str) => {
   return fString === fString.split('').reverse().join('');
 };
 
+isPalindrome('madam');
 module.exports = isPalindrome;

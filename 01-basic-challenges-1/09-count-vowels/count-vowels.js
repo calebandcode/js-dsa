@@ -1,15 +1,18 @@
 function countVowels(str) {
-  str.toLowerCase().replace(/[^a-z0-9]/g, '');
-  const vowels = ['a', 'e', 'i', 'o', 'u'];
-  let vowelCount = 0;
-  for (let i = 0; i <= vowels.length; i++) {
-    if (str[i] === vowels[i]) {
-      vowelCount++;
+  const formatedStr = str.toLowerCase();
+  let count = 0;
+  for (let i = 0; i < formatedStr.length; i++) {
+    let char = formatedStr[i];
+    if (
+      char === 'a' ||
+      char === 'e' ||
+      char === 'i' ||
+      char === 'o' ||
+      char === 'u'
+    ) {
+      count++;
     }
   }
-  //   console.log(vowelCount);
-  return vowelCount;
-  //   return str.includes(vowels.join(''));
+  return count;
 }
-// countVowels('hello');
 module.exports = countVowels;
