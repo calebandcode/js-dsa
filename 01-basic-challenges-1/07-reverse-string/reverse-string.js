@@ -15,6 +15,6 @@ const reverseString = (str) => {
 //   return reversed;
 // }
 
-reverseString('hello');
+// reverseString('hello');
 
 module.exports = reverseString;
