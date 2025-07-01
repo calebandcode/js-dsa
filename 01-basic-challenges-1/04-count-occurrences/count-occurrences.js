@@ -21,4 +21,16 @@
 
 const countOccurrences = (str, char) => str.split(char).length - 1;
 
+// const countOccurrences = (str, char) => {
+//   let count = 0;
+//   for ([index, ltr] of str.split('').entries()) {
+//     if (str[index] === char) {
+//       count++;
+//     }
+//   }
+//   console.log(count);
+//   return count;
+// };
+// countOccurrences('banana', 'a');
+
 module.exports = countOccurrences;
