@@ -19,4 +19,5 @@ function fizzBuzzArray(num) {
 }
 
 // fizzBuzzArray(15);
+
 module.exports = fizzBuzzArray;
